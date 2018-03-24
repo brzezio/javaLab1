@@ -41,12 +41,19 @@ public class lab1
 				}
 				else//brak rozw w dziedzinie liczb rzecz
 				{
-
+					delta *=(-1);
+					double sqrtDelta=Math.sqrt(delta);
+					double x1,x2,imag;
+					x1=(-wsp[1])/(2.0*wsp[0]);
+					imag=sqrtDelta/(2.0*wsp[0]);
+					x2=(-wsp[1])/(2.0*wsp[0]);
+					System.out.println("x1= "+x1+"-"+imag+"i"+" x2= "+x2+"+"+imag+"i");
 				}
 			}
 			else if(wsp[1]!=0)//liniowa
 			{
-				
+				double x=(wsp[2]/wsp[1])*(-1.0);
+				System.out.println("x="+x);
 			}
 			else
 			{
