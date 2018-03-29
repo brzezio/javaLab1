@@ -20,23 +20,24 @@ public class Lab1
 				{
 					int j=i+1;
 					System.out.println("Error argument "+j);
+					System.exit(1);
 				}
 			}
 			if(wsp[0]!=0)//kwadratowa
 			{
 				double delta;
-				delta=wsp[1]*wsp[1]-4*wsp[0]*wsp[2];
+				delta=wsp[1]*wsp[1]-4.0*wsp[0]*wsp[2];
 				if(delta>0)//2 rozw
 				{
 					double sqrtDelta=Math.sqrt(delta);
 					double x1,x2;
-					x1=(-wsp[1]-sqrtDelta)/(2*wsp[0]);
-					x2=(-wsp[1]+sqrtDelta)/(2*wsp[0]);
+					x1=(-wsp[1]-sqrtDelta)/(2.0*wsp[0]);
+					x2=(-wsp[1]+sqrtDelta)/(2.0*wsp[0]);
 					System.out.println("x1= "+x1+" x2= "+x2);
 				}
 				else if(delta==0)//1 rozw
 				{
-					double x=-wsp[1]/(2*wsp[0]);
+					double x=-wsp[1]/(2.0*wsp[0]);
 					System.out.println("x= "+x);
 				}
 				else//brak rozw w dziedzinie liczb rzecz
